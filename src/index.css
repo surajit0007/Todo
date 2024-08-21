@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
 }
+/* div{
+  border: .5px solid black;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.top_iteams{
+  margin: 0 auto;
+  margin-top: 120px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0D0D15;
+  border-radius: 5px;
+  padding:23px 0 35px 0;
+  gap: 30px;
+
+}
+.input_field_and_submit_button{
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.main_inputfield{
+  width: 50%;
+  padding: 10px 20px;
+  /* height: 60px; */
+}
+.submit_button{
+  padding: 0 15px;
+  background-color:#6C52E8;
+  color: white;
+}
+.todolist_cards_wrapper{
+  margin: 0 auto;
+  margin-top: 120px;
+  /* height: 100px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+}
+.todolist_card{
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  background:linear-gradient(90deg, #E54A92,#6C52E8 );
+  border-radius: 5px;
+}
+
+.headings{
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+
+}
+
+.todolist_card_content{
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  column-gap: 10px;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.todo_paragraph_and_textarea{
+  max-width: 400px;
+  overflow-x: hidden;
+  /* height: 80px; */
 }
