@@ -47,6 +47,8 @@ function App() {
 
           <div className='todolist_cards_wrapper'>
 
+            <h1 style={{display:todos.length !=0 ? 'none' : 'block'}}>Create Your Todos</h1>
+
             {
               todos.map((v)=>{
 
