@@ -16,10 +16,12 @@ export function Context({children}){
     }
 
 
-    let [todos,setTodos]=useState(oldtodoiteamsinstorage())
+    let [todos,setTodos]=useState(()=>oldtodoiteamsinstorage())
 
     function addtodos(id,todo,ischeck){
-        setTodos([...todos,{id:id, todoText:todo, ischeck:ischeck}])
+        if(todo.length != 0){ 
+            setTodos([...todos,{id:id, todoText:todo, ischeck:ischeck}])
+        }
     }
 
     function removetodos(id){
